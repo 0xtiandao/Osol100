@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: yellowgreen;
 }
 
 .text-center {
@@ -12,17 +12,19 @@ body {
 }
 
 .table-container {
+    text-align:center;
     margin-top: 20px;
     width: 100%;
     overflow-x: auto;
 }
 
 .search-bar {
+
     padding: 10px;
     width: 20rem;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 table {
@@ -77,7 +79,7 @@ table tbody tr:nth-child(even) {
 .sticky-column {
   position: sticky;
   left: 0;
-  background-color: white; /* Optional: to ensure the background is visible */
+  background-color: purple ; /* Optional: to ensure the background is visible */
   z-index: 1; /* Ensure the sticky column is on top */
   border-right: 1px solid rgb(176, 174, 174) !important;
 }
