@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 100 AI COIN ON COINGECKO </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 class="text-center">TOP 100 AI COIN ON COINGECKO</h1>
+
+    <div class="table-container">
+        <input 
+            type="text" 
+            id="search-input" 
+            class="search-bar" 
+            placeholder="Search coin" 
+            oninput="applyFilter(event)"
+        />
+        <table id="coins-table">
+            <thead>
+  <tr>
+    <th data-column="name" onclick="sortTable('name')">Coin 
+       <span class="sort-icon"></span>
+    </th>
+    <th data-column="current_price" onclick="sortTable('current_price')">Price 
+      <span class="sort-icon"></span>
+    </th>
+    <th data-column="market_cap" onclick="sortTable('market_cap')">Market Cap 
+      <span class="sort-icon"></span>
+    </th>
+    <th data-column="market_cap_rank" onclick="sortTable('market_cap_rank')">Market Cap Rank 
+     <span class="sort-icon"></span>
+    </th>
+    <th data-column="price_change_24h" onclick="sortTable('price_change_24h')">Price Change (24h) 
+    <span class="sort-icon"></span>
+    </th>
+    <th data-column="market_cap_change_24h" onclick="sortTable('market_cap_change_24h')">Market Cap Change (24h) 
+      <span class="sort-icon"></span>
+    </th>
+    <th data-column="circulating_supply" onclick="sortTable('circulating_supply')">Circulating Supply 
+      <span class="sort-icon"></span>
+    </th>
+    <th data-column="total_supply" onclick="sortTable('total_supply')">Total Supply 
+      <span class="sort-icon"></span>
+    </th>
+    <th data-column="last_updated" onclick="sortTable('last_updated')">Last Updated 
+       <span class="sort-icon"></span>
+    </th>
+  </tr>
+</thead>
+
+            <tbody id="coins-table-body">
+            </tbody>
+        </table>
+          <div id="pagination-container"></div>
+    <!-- Pagination buttons will be populated here -->
+  </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

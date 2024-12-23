@@ -1,0 +1,171 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 20rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.coin-row {
+    display: flex;
+    align-items: center;
+}
+
+.coin-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.coin-info .coin-name {
+    font-weight: bold;
+}
+
+.coin-info .coin-symbol {
+    font-style: italic;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+/* Make Agent Name column sticky */
+.sticky-column {
+  position: sticky;
+  left: 0;
+  background-color: white; /* Optional: to ensure the background is visible */
+  z-index: 1; /* Ensure the sticky column is on top */
+  border-right: 1px solid rgb(176, 174, 174) !important;
+}
+
+/* Style for the image to ensure it's 10px * 10px */
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.coin-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and text */
+}
+
+.coin-image img {
+  object-fit: cover;
+  border-radius: 50%; /* To make the image circular */
+}
+
+.coin-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coin-symbol {
+  font-size: 12px;
+  color: gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Style for pagination */
+#pagination-container {
+  margin: 20px;
+  text-align: center;
+}
+
+.pagination-btn {
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color:  #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+  background-color:  #3498db;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-red {
+  color: red;
+}
+
+.sort-icon {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.sort-icon::before {
+  content: '↑↓'; /* Show both arrows initially */
+}
+
+.sort-asc .sort-icon::before {
+  content: '↑';  /* Ascending arrow */
+}
+
+.sort-desc .sort-icon::before {
+  content: '↓';  /* Descending arrow */
+}
+
+th .sort-icon {
+  visibility: visible; /* Ensure the icons are always visible */
+}
